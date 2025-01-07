@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message User {
+  string name = 2;
+  string email = 3;
+  string password = 4;
+}
+
+message Product {
+  string name = 2;
+  string description = 3;
+  float price = 4;
+}
+
+message Users {
+  repeated User users = 1;
+}
+
+message Products {
+  repeated Product products = 1;
+}
